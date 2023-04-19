@@ -1,0 +1,14 @@
+button {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  background-color: #F30168;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}

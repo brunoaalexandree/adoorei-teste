@@ -1,9 +1,9 @@
 <template>
   <label v-show="label">{{ label }}</label>
-  <input :type="type" :placeholder="placeholder" />
+  <input :type="type" :placeholder="placeholder" :style="style" @input="onChangeText" />
 </template>
 
-<script lang="js">
+<script>
 export default {
   name: "Input",
   props: {
@@ -12,6 +12,12 @@ export default {
     type: {
       type: String,
       default: 'text',
+    },
+    style: String,
+  },
+  methods: {
+    onChangeText(event) {
+      this.$emit('inputChanged', event.target.value);
     }
   }
 }

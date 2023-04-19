@@ -5,7 +5,7 @@
   flex-direction: column;
   padding: 40px;
   background-color: #ffffff;
-  margin-top: 15px;
+  margin-top: 17px;
   border-radius: 5px;
 
   .top-plan-box {
@@ -63,13 +63,6 @@
     }
   }
 
-  .divider {
-    background-color: rgba(196, 196, 196, 0.5);
-    width: 265px;
-    height: 1px;
-    margin: 16px 0;
-  }
-
   Button {
     font-size: 1rem;
     color: #ffffff;
@@ -101,6 +94,31 @@
       margin-top: 10px;
       font-size: 1.0625rem;
       color: #666666;
+    }
+  }
+
+  .plan-box-footer {
+    width: 348px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    bottom: 0;
+    height: 200px;
+
+    margin-top: -187px;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 25%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    Button {
+      background-color: #fff;
+      border: 1px solid #000;
+      color: #000;
+      width: 248px;
     }
   }
 }

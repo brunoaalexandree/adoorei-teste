@@ -1,10 +1,6 @@
 <template>
   <div class="select-plan-container">
-    <img src="../../../assets/logo.svg" alt="Logo Locaweb" />
-    <h1>
-      Você está muito próximo de mudar a forma de <br />
-      <span>hospedar seu site</span>
-    </h1>
+    <Header />
     <p>Escolha o seu plano</p>
 
     <div class="plan-box-container">
@@ -14,11 +10,13 @@
 </template>
 
 <script>
+import Header from '../components/Header/Header.vue';
 import PlanBox from '../components/PlanBox/PlanBox.vue';
 
 export default {
   name: 'SelectPlanLayout',
   components: {
+    Header,
     PlanBox
   },
   props: {

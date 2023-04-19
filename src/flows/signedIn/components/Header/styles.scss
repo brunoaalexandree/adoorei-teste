@@ -1,0 +1,51 @@
+.header-container {
+  width: 100%;
+  padding: 30px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 50px;
+
+  .logout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 71px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 5px;
+
+    button {
+      border: none;
+
+      background-color: #d9d9d9;
+      width: 52px;
+      height: 52px;
+
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 1.125rem;
+
+      border-radius: 50%;
+    }
+
+    div {
+      button {
+        width: 131px;
+        height: 50px;
+
+        background-color: #fff;
+        color: #292D32;
+
+        text-align: right;
+        font-size: 1rem;
+        border-radius: 5px;
+        margin-top: 10px;
+
+        padding: 10px;
+      }
+    }
+  }
+}

@@ -25,7 +25,8 @@ That's all, folks. ❤
 - Error messages
 - Create hooks for login, logout, registration methods.
 - Use some component library, such as <a href="https://vuetifyjs.com/en/">Vuetify</a>.
-- Use TypeScript
+- To use TypeScript
+- To implement Loading States
 
 # How to install
 

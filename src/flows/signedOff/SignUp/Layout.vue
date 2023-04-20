@@ -85,9 +85,6 @@ export default {
   props: {
     selectedPlan: Object,
   },
-  mounted() {
-    console.log(this.selectedPlan)
-  },
   methods: {
     onFullNameChanged(value) {
       this.fullName = value;
@@ -144,7 +141,6 @@ export default {
         }
         try {
           const res = await register(userData);
-          console.log({ res });
           this.$store.commit('setUser', userData);
           this.$router.push('/home');
         } catch (err) {

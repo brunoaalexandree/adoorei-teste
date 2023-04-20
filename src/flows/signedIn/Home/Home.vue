@@ -28,8 +28,6 @@ export default {
     } else {
       this.user = store.getters.getUser;
     }
-
-    console.log(this.user);
   }
 }
 </script>

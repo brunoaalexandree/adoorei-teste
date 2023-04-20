@@ -65,7 +65,6 @@ export default {
       } catch (err) {
         this.username = "";
         this.password = "";
-        console.log(err)
       }
     }
   }

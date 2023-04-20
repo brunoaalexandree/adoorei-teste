@@ -4,7 +4,7 @@
     <div class="login-box">
       <h1>Entre na sua conta</h1>
       <p>Para acessar sua conta informe seu-email e senha</p>
-      <Input placeholder="Seu e-mail" type="text" label="E-mail" :vModel="username" @inputChanged="onUserNameChanged" />
+      <Input placeholder="Seu login" type="text" label="E-mail" :vModel="username" @inputChanged="onUserNameChanged" />
       <Input placeholder="Sua senha" type="password" label="Senha" :vModel="password" @inputChanged="onPasswordChanged" />
       <span> Esqueci minha senha</span>
       <Button text="FAZER LOGIN" @click="handleLogin()" />

@@ -17,5 +17,16 @@
     display: flex;
     flex-direction: row;
     gap: 25px;
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .select-plan-container {
+    .plan-box-container {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
   }
 }

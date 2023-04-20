@@ -4,7 +4,7 @@ export default createStore({
   state: {
     selectedPlan: {},
     token: null,
-    user: {},
+    user: null,
   },
   getters: {
     getSelectedPlan(state) {

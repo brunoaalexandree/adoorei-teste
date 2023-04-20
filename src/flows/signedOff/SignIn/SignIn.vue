@@ -42,10 +42,6 @@ export default {
     onPasswordChanged(value) {
       this.password = value;
     },
-    // mor_2314
-    // 83r5^_     sub 2
-    // david_r
-    // 3478*#54   sub 6
     async handleLogin() {
       try {
         const req = await login({

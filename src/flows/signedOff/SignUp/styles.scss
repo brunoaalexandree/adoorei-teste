@@ -84,5 +84,44 @@
         left: 6px;
       }
     }
+
+    .info-pass {
+      background-color: #fcd7e7;
+      border: 1px solid #f30168;
+      border-radius: 5px;
+      padding: 15px;
+      height: 50px;
+      margin-bottom: 20px;
+      p {
+        size: 1rem;
+      }
+    }
+  }
+
+  .selected-plan-mobile {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .sign-up-container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 617px;
+
+    .selected-plan-mobile {
+      display: block;
+      height: 381px;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .selected-plan-content {
+      display: none;
+      width: 0px;
+      height: 0px;
+    }
   }
 }

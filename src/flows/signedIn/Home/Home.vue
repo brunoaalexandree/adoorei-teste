@@ -21,8 +21,9 @@ export default {
     const store = this.$store;
 
     const token = store.getters.getToken;
+    const user = store.getters.getUser;
 
-    if (!token) {
+    if (!token && !user) {
       this.$router.push('/');
     } else {
       this.user = store.getters.getUser;

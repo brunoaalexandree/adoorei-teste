@@ -4,7 +4,7 @@
 
     <div @click="showLogoutMenu = !showLogoutMenu" class="logout">
       <button>
-        <p>D</p>
+        <p>{{ userName[0] }}</p>
       </button>
       <div v-if="showLogoutMenu" @click="showLogoutMenu = false" class="logout-menu">
         <button @click="logout()">
@@ -30,7 +30,7 @@ export default {
     async logout() {
       const store = this.$store;
 
-      await store.commit('setUser', {});
+      await store.commit('setUser', null);
       await store.commit('setToken', null);
 
       this.$router.push('/');

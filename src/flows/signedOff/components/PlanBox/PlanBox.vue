@@ -24,22 +24,25 @@
     <router-link to="/sign-up">
       <Button v-show="!service.selected" text="ESCOLHER ESSE PLANO" @click="selectPlan()" />
     </router-link>
-    <div v-if="service.selected === true">
-      <div v-show="index < 4" v-for="(planService, index) in service.planServices" :key="index" class="services-plan-box">
-        <h3>{{ planService.title }}</h3>
-        <ul v-show="planService.bulletPoints">
-          <li v-for="(bulletPoint, index) in planService.bulletPoints" :key="index"><img
-              src="../../../../assets/check-icon.svg" alt=""> {{ bulletPoint.service }}</li>
-        </ul>
+    <div v-show="!mobile">
+      <div v-if="service.selected === true">
+        <div v-show="index < 4" v-for="(planService, index) in service.planServices" :key="index"
+          class="services-plan-box">
+          <h3>{{ planService.title }}</h3>
+          <ul v-show="planService.bulletPoints">
+            <li v-for="(bulletPoint, index) in planService.bulletPoints" :key="index"><img
+                src="../../../../assets/check-icon.svg" alt=""> {{ bulletPoint.service }}</li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div v-else>
-      <div v-for="(planService, index) in service.planServices" :key="index" class="services-plan-box">
-        <h3>{{ planService.title }}</h3>
-        <ul v-show="planService.bulletPoints">
-          <li v-for="(bulletPoint, index) in planService.bulletPoints" :key="index"><img
-              src="../../../../assets/check-icon.svg" alt=""> {{ bulletPoint.service }}</li>
-        </ul>
+      <div v-else>
+        <div v-for="(planService, index) in service.planServices" :key="index" class="services-plan-box">
+          <h3>{{ planService.title }}</h3>
+          <ul v-show="planService.bulletPoints">
+            <li v-for="(bulletPoint, index) in planService.bulletPoints" :key="index"><img
+                src="../../../../assets/check-icon.svg" alt=""> {{ bulletPoint.service }}</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -61,6 +64,7 @@ export default {
   },
   props: {
     service: Object,
+    mobile: Boolean,
   },
   methods: {
     selectPlan() {

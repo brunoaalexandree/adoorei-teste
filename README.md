@@ -21,9 +21,11 @@ That's all, folks. ❤
 
 # What to improve?
 ## The application has some improvements to be made, among them:
+- Responsivity
 - Error messages
 - Create hooks for login, logout, registration methods.
 - Use some component library, such as <a href="https://vuetifyjs.com/en/">Vuetify</a>.
+- Use TypeScript
 
 # How to install
 

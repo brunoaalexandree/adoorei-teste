@@ -51,4 +51,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [MIT](https://choosealicense.com/licenses/mit/)
 <br />
 <br />
-Made with 💖 by: @brunoaalexandre
+Made with 💖 by: @brunoaalexandree
